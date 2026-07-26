@@ -9,9 +9,9 @@
   },
   "author": "GuildPass Team",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "test": "tsc -p test/tsconfig.json --skipLibCheck && node --test test-dist/test/*.test.js",
     "test:e2e": "playwright test",
